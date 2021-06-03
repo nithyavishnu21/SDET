@@ -1,0 +1,1144 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Commenting on the post",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 698326400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:19.341Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3933500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Create comment with postId,name,email and body",
+        "description": "",
+        "id": "comment-on-posts;create-comment-with-postid-name-email-and-body;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 768600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "{\"name\":\"tuylo\",\"postId\":1,\"body\":\"yffwcqkkdyjsusf\",\"email\":\"otwuu@gmail.com\"}"
+            ],
+            "result": {
+              "duration": 2253516100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Hit comment API using endpoint \"/comments\" on postId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/comments\"",
+                  "offset": 31
+                },
+                {
+                  "val": "1",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinition.Comments.hit_post_request_using_endpoint(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "CREATED NEWLY"
+            ],
+            "result": {
+              "duration": 1993100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "API returns the response with status code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Response Body is: {\n  \"name\": \"tuylo\",\n  \"postId\": 1,\n  \"body\": \"yffwcqkkdyjsusf\",\n  \"email\": \"otwuu@gmail.com\",\n  \"id\": 501\n}",
+              "Id: 501"
+            ],
+            "result": {
+              "duration": 595601600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Id is created",
+            "match": {
+              "location": "stepDefinition.Posts.id_is_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Comment Creation Validation successful"
+            ],
+            "result": {
+              "duration": 20947500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate the response against created postId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Comments.validate_the_response_against_the_input_details(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Commenting on the post",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1938400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:23.078Z",
+        "before": [
+          {
+            "result": {
+              "duration": 856900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Create comment with postId,name,email and body",
+        "description": "",
+        "id": "comment-on-posts;create-comment-with-postid-name-email-and-body;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "{\"name\":\"zlzad\",\"postId\":2,\"body\":\"cmlamwswqccujzz\",\"email\":\"eqaaj@gmail.com\"}"
+            ],
+            "result": {
+              "duration": 3149582100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Hit comment API using endpoint \"/comments\" on postId 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/comments\"",
+                  "offset": 31
+                },
+                {
+                  "val": "2",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinition.Comments.hit_post_request_using_endpoint(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "CREATED NEWLY"
+            ],
+            "result": {
+              "duration": 2728400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "API returns the response with status code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Response Body is: {\n  \"name\": \"zlzad\",\n  \"postId\": 2,\n  \"body\": \"cmlamwswqccujzz\",\n  \"email\": \"eqaaj@gmail.com\",\n  \"id\": 501\n}",
+              "Id: 501"
+            ],
+            "result": {
+              "duration": 28405700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Id is created",
+            "match": {
+              "location": "stepDefinition.Posts.id_is_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Comment Creation Validation successful"
+            ],
+            "result": {
+              "duration": 997100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate the response against created postId 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Comments.validate_the_response_against_the_input_details(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Commenting on the post",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1992500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:26.275Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Create post with existing details",
+        "description": "",
+        "id": "comment-on-posts;create-post-with-existing-details",
+        "after": [
+          {
+            "result": {
+              "duration": 884200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "{\"name\":\"jjybu\",\"postId\":1,\"body\":\"mhwzcmypvewchts\",\"email\":\"grvvd@gmail.com\"}"
+            ],
+            "result": {
+              "duration": 1087645800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Hit comment API using endpoint \"/comments\" on postId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/comments\"",
+                  "offset": 31
+                },
+                {
+                  "val": "1",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinition.Comments.hit_post_request_using_endpoint(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "CREATED NEWLY"
+            ],
+            "result": {
+              "duration": 1890900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "API returns the response with status code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Response Body is: {\n  \"name\": \"jjybu\",\n  \"postId\": 1,\n  \"body\": \"mhwzcmypvewchts\",\n  \"email\": \"grvvd@gmail.com\",\n  \"id\": 501\n}",
+              "Id: 501"
+            ],
+            "result": {
+              "duration": 43107500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Id is created",
+            "match": {
+              "location": "stepDefinition.Posts.id_is_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Comment Creation Validation successful"
+            ],
+            "result": {
+              "duration": 1036300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Validate the response against created postId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Comments.validate_the_response_against_the_input_details(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      }
+    ],
+    "name": "Comment on Posts",
+    "description": "",
+    "id": "comment-on-posts",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/comments.feature",
+    "tags": [
+      {
+        "name": "@Functional",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Post creation",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1993600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:27.424Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Create new post with userId,title and body",
+        "description": "",
+        "id": "make-posts;create-new-post-with-userid-title-and-body;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "{\"title\":\"jhcjmg\",\"body\":\"erlfbwzllltdfhb\",\"userId\":1}"
+            ],
+            "result": {
+              "duration": 912551600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Hit post creation API using endpoint \"/posts\" for userId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 37
+                },
+                {
+                  "val": "1",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinition.Posts.hit_post_request_using_endpoint(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "CREATED NEWLY"
+            ],
+            "result": {
+              "duration": 957100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "API returns the response with status code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Response Body is: {\n  \"title\": \"jhcjmg\",\n  \"body\": \"erlfbwzllltdfhb\",\n  \"userId\": 1,\n  \"id\": 101\n}",
+              "Id: 101"
+            ],
+            "result": {
+              "duration": 24557300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Id is created",
+            "match": {
+              "location": "stepDefinition.Posts.id_is_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Post Creation Validation successful"
+            ],
+            "result": {
+              "duration": 1131500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate the response against created userId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Posts.validate_the_response_against_the_input_details(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Post creation",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:28.385Z",
+        "before": [
+          {
+            "result": {
+              "duration": 981600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Create new post with userId,title and body",
+        "description": "",
+        "id": "make-posts;create-new-post-with-userid-title-and-body;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "{\"title\":\"sanesa\",\"body\":\"keyikgvbypigzrk\",\"userId\":2}"
+            ],
+            "result": {
+              "duration": 744474100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Hit post creation API using endpoint \"/posts\" for userId 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 37
+                },
+                {
+                  "val": "2",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinition.Posts.hit_post_request_using_endpoint(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "CREATED NEWLY"
+            ],
+            "result": {
+              "duration": 1994900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "API returns the response with status code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Response Body is: {\n  \"title\": \"sanesa\",\n  \"body\": \"keyikgvbypigzrk\",\n  \"userId\": 2,\n  \"id\": 101\n}",
+              "Id: 101"
+            ],
+            "result": {
+              "duration": 32557700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Id is created",
+            "match": {
+              "location": "stepDefinition.Posts.id_is_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Post Creation Validation successful"
+            ],
+            "result": {
+              "duration": 1564200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate the response against created userId 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Posts.validate_the_response_against_the_input_details(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Post creation",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1004600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:29.178Z",
+        "before": [
+          {
+            "result": {
+              "duration": 556300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Create post with existing details",
+        "description": "",
+        "id": "make-posts;create-post-with-existing-details",
+        "after": [
+          {
+            "result": {
+              "duration": 935600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "{\"title\":\"qawdhb\",\"body\":\"wbtfguwefrbfkmp\",\"userId\":1}"
+            ],
+            "result": {
+              "duration": 773938000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Hit post creation API using endpoint \"/posts\" for userId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 37
+                },
+                {
+                  "val": "1",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinition.Posts.hit_post_request_using_endpoint(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "CREATED NEWLY"
+            ],
+            "result": {
+              "duration": 1994400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "API returns the response with status code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Response Body is: {\n  \"title\": \"qawdhb\",\n  \"body\": \"wbtfguwefrbfkmp\",\n  \"userId\": 1,\n  \"id\": 101\n}",
+              "Id: 101"
+            ],
+            "result": {
+              "duration": 28754100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Id is created",
+            "match": {
+              "location": "stepDefinition.Posts.id_is_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Post Creation Validation successful"
+            ],
+            "result": {
+              "duration": 1771900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Validate the response against created userId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Posts.validate_the_response_against_the_input_details(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      }
+    ],
+    "name": "Make Posts",
+    "description": "",
+    "id": "make-posts",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/posts.feature",
+    "tags": [
+      {
+        "name": "@Functional",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "API health check up",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 991000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:29.994Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Get all the users and users count",
+        "description": "",
+        "id": "list-of-users;get-all-the-users-and-users-count",
+        "after": [
+          {
+            "result": {
+              "duration": 882400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Get request triggered"
+            ],
+            "result": {
+              "duration": 323093400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Hit the Get Request with the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinition.Users.hit_the_url_with_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "SUCCESS"
+            ],
+            "result": {
+              "duration": 810700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "API returns the response with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "[\n  {\n    \"id\": 1,\n    \"name\": \"Leanne Graham\",\n    \"username\": \"Bret\",\n    \"email\": \"Sincere@april.biz\",\n    \"address\": {\n      \"street\": \"Kulas Light\",\n      \"suite\": \"Apt. 556\",\n      \"city\": \"Gwenborough\",\n      \"zipcode\": \"92998-3874\",\n      \"geo\": {\n        \"lat\": \"-37.3159\",\n        \"lng\": \"81.1496\"\n      }\n    },\n    \"phone\": \"1-770-736-8031 x56442\",\n    \"website\": \"hildegard.org\",\n    \"company\": {\n      \"name\": \"Romaguera-Crona\",\n      \"catchPhrase\": \"Multi-layered client-server neural-net\",\n      \"bs\": \"harness real-time e-markets\"\n    }\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Ervin Howell\",\n    \"username\": \"Antonette\",\n    \"email\": \"Shanna@melissa.tv\",\n    \"address\": {\n      \"street\": \"Victor Plains\",\n      \"suite\": \"Suite 879\",\n      \"city\": \"Wisokyburgh\",\n      \"zipcode\": \"90566-7771\",\n      \"geo\": {\n        \"lat\": \"-43.9509\",\n        \"lng\": \"-34.4618\"\n      }\n    },\n    \"phone\": \"010-692-6593 x09125\",\n    \"website\": \"anastasia.net\",\n    \"company\": {\n      \"name\": \"Deckow-Crist\",\n      \"catchPhrase\": \"Proactive didactic contingency\",\n      \"bs\": \"synergize scalable supply-chains\"\n    }\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Clementine Bauch\",\n    \"username\": \"Samantha\",\n    \"email\": \"Nathan@yesenia.net\",\n    \"address\": {\n      \"street\": \"Douglas Extension\",\n      \"suite\": \"Suite 847\",\n      \"city\": \"McKenziehaven\",\n      \"zipcode\": \"59590-4157\",\n      \"geo\": {\n        \"lat\": \"-68.6102\",\n        \"lng\": \"-47.0653\"\n      }\n    },\n    \"phone\": \"1-463-123-4447\",\n    \"website\": \"ramiro.info\",\n    \"company\": {\n      \"name\": \"Romaguera-Jacobson\",\n      \"catchPhrase\": \"Face to face bifurcated interface\",\n      \"bs\": \"e-enable strategic applications\"\n    }\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Patricia Lebsack\",\n    \"username\": \"Karianne\",\n    \"email\": \"Julianne.OConner@kory.org\",\n    \"address\": {\n      \"street\": \"Hoeger Mall\",\n      \"suite\": \"Apt. 692\",\n      \"city\": \"South Elvis\",\n      \"zipcode\": \"53919-4257\",\n      \"geo\": {\n        \"lat\": \"29.4572\",\n        \"lng\": \"-164.2990\"\n      }\n    },\n    \"phone\": \"493-170-9623 x156\",\n    \"website\": \"kale.biz\",\n    \"company\": {\n      \"name\": \"Robel-Corkery\",\n      \"catchPhrase\": \"Multi-tiered zero tolerance productivity\",\n      \"bs\": \"transition cutting-edge web services\"\n    }\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Chelsey Dietrich\",\n    \"username\": \"Kamren\",\n    \"email\": \"Lucio_Hettinger@annie.ca\",\n    \"address\": {\n      \"street\": \"Skiles Walks\",\n      \"suite\": \"Suite 351\",\n      \"city\": \"Roscoeview\",\n      \"zipcode\": \"33263\",\n      \"geo\": {\n        \"lat\": \"-31.8129\",\n        \"lng\": \"62.5342\"\n      }\n    },\n    \"phone\": \"(254)954-1289\",\n    \"website\": \"demarco.info\",\n    \"company\": {\n      \"name\": \"Keebler LLC\",\n      \"catchPhrase\": \"User-centric fault-tolerant solution\",\n      \"bs\": \"revolutionize end-to-end systems\"\n    }\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Mrs. Dennis Schulist\",\n    \"username\": \"Leopoldo_Corkery\",\n    \"email\": \"Karley_Dach@jasper.info\",\n    \"address\": {\n      \"street\": \"Norberto Crossing\",\n      \"suite\": \"Apt. 950\",\n      \"city\": \"South Christy\",\n      \"zipcode\": \"23505-1337\",\n      \"geo\": {\n        \"lat\": \"-71.4197\",\n        \"lng\": \"71.7478\"\n      }\n    },\n    \"phone\": \"1-477-935-8478 x6430\",\n    \"website\": \"ola.org\",\n    \"company\": {\n      \"name\": \"Considine-Lockman\",\n      \"catchPhrase\": \"Synchronised bottom-line interface\",\n      \"bs\": \"e-enable innovative applications\"\n    }\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Kurtis Weissnat\",\n    \"username\": \"Elwyn.Skiles\",\n    \"email\": \"Telly.Hoeger@billy.biz\",\n    \"address\": {\n      \"street\": \"Rex Trail\",\n      \"suite\": \"Suite 280\",\n      \"city\": \"Howemouth\",\n      \"zipcode\": \"58804-1099\",\n      \"geo\": {\n        \"lat\": \"24.8918\",\n        \"lng\": \"21.8984\"\n      }\n    },\n    \"phone\": \"210.067.6132\",\n    \"website\": \"elvis.io\",\n    \"company\": {\n      \"name\": \"Johns Group\",\n      \"catchPhrase\": \"Configurable multimedia task-force\",\n      \"bs\": \"generate enterprise e-tailers\"\n    }\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Nicholas Runolfsdottir V\",\n    \"username\": \"Maxime_Nienow\",\n    \"email\": \"Sherwood@rosamond.me\",\n    \"address\": {\n      \"street\": \"Ellsworth Summit\",\n      \"suite\": \"Suite 729\",\n      \"city\": \"Aliyaview\",\n      \"zipcode\": \"45169\",\n      \"geo\": {\n        \"lat\": \"-14.3990\",\n        \"lng\": \"-120.7677\"\n      }\n    },\n    \"phone\": \"586.493.6943 x140\",\n    \"website\": \"jacynthe.com\",\n    \"company\": {\n      \"name\": \"Abernathy Group\",\n      \"catchPhrase\": \"Implemented secondary concept\",\n      \"bs\": \"e-enable extensible e-tailers\"\n    }\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Glenna Reichert\",\n    \"username\": \"Delphine\",\n    \"email\": \"Chaim_McDermott@dana.io\",\n    \"address\": {\n      \"street\": \"Dayna Park\",\n      \"suite\": \"Suite 449\",\n      \"city\": \"Bartholomebury\",\n      \"zipcode\": \"76495-3109\",\n      \"geo\": {\n        \"lat\": \"24.6463\",\n        \"lng\": \"-168.8889\"\n      }\n    },\n    \"phone\": \"(775)976-6794 x41206\",\n    \"website\": \"conrad.com\",\n    \"company\": {\n      \"name\": \"Yost and Sons\",\n      \"catchPhrase\": \"Switchable contextually-based project\",\n      \"bs\": \"aggregate real-time technologies\"\n    }\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Clementina DuBuque\",\n    \"username\": \"Moriah.Stanton\",\n    \"email\": \"Rey.Padberg@karina.biz\",\n    \"address\": {\n      \"street\": \"Kattie Turnpike\",\n      \"suite\": \"Suite 198\",\n      \"city\": \"Lebsackbury\",\n      \"zipcode\": \"31428-2261\",\n      \"geo\": {\n        \"lat\": \"-38.2386\",\n        \"lng\": \"57.2232\"\n      }\n    },\n    \"phone\": \"024-648-3804\",\n    \"website\": \"ambrose.net\",\n    \"company\": {\n      \"name\": \"Hoeger LLC\",\n      \"catchPhrase\": \"Centralized empowering task-force\",\n      \"bs\": \"target end-to-end models\"\n    }\n  }\n]"
+            ],
+            "result": {
+              "duration": 2979000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Users will be returned",
+            "match": {
+              "location": "stepDefinition.Users.users_will_be_returned()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Number of users returned: 10"
+            ],
+            "result": {
+              "duration": 14476800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Get the number of users",
+            "match": {
+              "location": "stepDefinition.Users.get_the_number_of_users()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "API health check up",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1281000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "API is up and running",
+            "match": {
+              "location": "stepDefinition.Users.api_is_up_and_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T18:15:30.347Z",
+        "before": [
+          {
+            "result": {
+              "duration": 173600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User Retrieval with invalid userId",
+        "description": "",
+        "id": "list-of-users;user-retrieval-with-invalid-userid",
+        "after": [
+          {
+            "result": {
+              "duration": 369300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Get request triggered to fetch invalid user details"
+            ],
+            "result": {
+              "duration": 248658500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Hit the Get Request with the endpoint \"/users/\" for the userId 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users/\"",
+                  "offset": 38
+                },
+                {
+                  "val": "12",
+                  "offset": 63
+                }
+              ],
+              "location": "stepDefinition.Users.hit_the_url_with_the_endpoint_with(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "NO DATA FOUND"
+            ],
+            "result": {
+              "duration": 997100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "API returns the response with status code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Users.api_returns_the_response_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Functional"
+          }
+        ]
+      }
+    ],
+    "name": "List of Users",
+    "description": "",
+    "id": "list-of-users",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/users.feature",
+    "tags": [
+      {
+        "name": "@Functional",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
